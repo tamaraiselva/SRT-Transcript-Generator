@@ -223,6 +223,10 @@ Hello, how are you?
 
 3. **GUI:** Create a user-friendly interface for non-technical users.
 
+# Reference
+
+https://colab.research.google.com/drive/1aE-v4cgjGALp29AY3eg4ASAUrpEpV4B4#scrollTo=6zWurfhACMJi
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.

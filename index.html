@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player with Uploaded Subtitles</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.8); /* Transparent background */
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        #upload-section {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #video-container {
+            display: none; /* Initially hidden */
+            max-width: 1080px;
+            width: 150%;
+            position: relative;
+        }
+        video {
+            width: 100%;
+        }
+        #subtitle {
+            font-size: 24px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: 50px;
+            width: 100%;
+        }
+        #submit-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="upload-section">
+        <h1>Video and Subtitle Files</h1>
+        <label for="video-upload">Video File:</label>
+        <input type="file" id="video-upload" accept="video/*">
+        <br><br>
+        <label for="srt-upload">SRT Subtitle File:</label>
+        <input type="file" id="srt-upload" accept=".srt">
+        <br><br>
+        <button id="submit-button">Submit</button>
+    </div>
+
+    <div id="video-container">
+        <video id="video" controls>
+            Your browser does not support the video tag.
+        </video>
+        <div id="subtitle"></div>
+    </div>
+
+    <script src="subtitles.js"></script>
+</body>
+</html>

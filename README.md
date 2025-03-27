@@ -15,11 +15,17 @@ This project allows users to:
 
 Video-Subtitle-Generator
 │── srt_generator.ipynb    # Jupyter Notebook (Backend)
+
 │── index.html             # Web page to play video with subtitles
+
 │── subtitles.js           # JavaScript for displaying subtitles
+
 │── styles.css             # CSS for styling (Optional)
+
 │── README.md              # Project documentation (This file)
+
 │── output_transcript.srt  # English Subtitle (Generated)
+
 │── translated_transcript_ta.srt # Tamil Subtitle (Generated)
 
 ---
